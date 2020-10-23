@@ -99,20 +99,50 @@ textarea {
 html {
   background-color: rgb(11, 6, 36);
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0 em 2em;
   font-size: 1.25em;
-  height: 100%;
+}
+
+header, footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+}
+
+main p {
+  font-size: 1.35em;
+}
+
+main {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    font-size: 1em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
-  flex-flow: row wrap;
   display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -120,10 +150,9 @@ body {
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
+  line-height: 1.25em;
+  font-size: 1.2em;
   background-color: rgb(11, 6, 36);
-  height: auto;
   display: flex;
   width: 30%;
   justify-content: center;
@@ -140,6 +169,13 @@ body {
     border-color: #999;
 }
 
+footer {
+    border-top: 1px solid #fff;
+}
+
+footer i {
+    padding: 30px 20px 0 0;
+}
 
 /* ==========================================================================
    Helper classes
